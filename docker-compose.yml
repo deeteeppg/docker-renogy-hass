@@ -12,4 +12,4 @@ services:
       - '/dev/ttyUSB0:/dev/ttyUSB0'
     volumes:
       - './config:/app/config:ro'
-      - './logs:/app/logs'
+#      - './logs:/app/logs'
