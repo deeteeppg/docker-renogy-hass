@@ -1,0 +1,24 @@
+{
+  "type": "request",
+  "source": "default",
+  "fragment": 2,
+  "unique": 30,
+  "database_config": {
+    "databases": [
+      {
+        "external": "config/mqtt.json"
+      }
+    ]
+  },
+  "request": [
+    {
+      "type": "modbus",
+      "io": "config/rover_serial.json",
+      "devices": {
+        "16": {
+          "type": "rover"
+        }
+      }
+    }
+  ]
+}

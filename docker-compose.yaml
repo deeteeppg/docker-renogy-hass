@@ -1,0 +1,15 @@
+services:
+  solarthing:
+    image: 'ghcr.io/wildmountainfarms/solarthing:latest'
+    container_name: solarthing-main
+    restart: 'unless-stopped'
+    command: run --base config/base.json
+    group_add: # this is only necessary if you are using a user other than root
+      - dialout
+    cap_add:
+      - SYS_RAWIO
+    devices:
+      - '/dev/ttyUSB0:/dev/ttyUSB0'
+    volumes:
+      - './config:/app/config:ro'
+      - './logs:/app/logs'
