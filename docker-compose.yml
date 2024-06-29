@@ -11,7 +11,7 @@ services:
     devices:
       - '/dev/ttyUSB0:/dev/ttyUSB0'
     volumes:
-      - 'st:/app/'
-      - './config:/app/config:ro'
+      - 'st:/'
+      - './config:/app/config'
 volumes:
   st:
