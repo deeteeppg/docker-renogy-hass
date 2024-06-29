@@ -11,5 +11,5 @@ services:
     devices:
       - '/dev/ttyUSB0:/dev/ttyUSB0'
     volumes:
-      - '/home/davidtaylor/docker-renogy-hass/config:/app/config:ro'
+      - './config:/app/config:ro'
       - './logs:/app/logs'
