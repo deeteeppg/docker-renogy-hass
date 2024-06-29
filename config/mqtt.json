@@ -5,7 +5,7 @@
     "client_id": "solarthing-client",
     "username": "solarthing_user",
     "password": "my_cool_password",
-    "topic": "hass/solarthing_test/wanderer",
+    "topic": "hass/solarthing/wanderer",
     "retain": true
   }
 }
