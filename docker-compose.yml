@@ -12,6 +12,6 @@ services:
       - '/dev/ttyUSB0:/dev/ttyUSB0'
     volumes:
       - 'st:/app'
-      - 'config:/app/config'
+      - '/mnt/data/supervisor/share/solarthing/config:/app/config:ro'
 volumes:
   st:
