@@ -1,7 +1,6 @@
 {
   "type": "mqtt",
   "config": {
-##    Replace with your broker address
     "broker": "tcp://hass.local:1883",
     "client_id": "solarthing-client",
     "username": "solarthing_user",
