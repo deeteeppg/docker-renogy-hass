@@ -14,4 +14,5 @@ services:
 #      This is to work in HASSIO with the Portainer add in.
 #      Note you must manually copy the config file to this directory in HASSIO
 #      - '/mnt/data/supervisor/share/solarthing/config:/app/config:ro'
+#      Below is for normal docker operation
        - './config:/app/config:ro'
