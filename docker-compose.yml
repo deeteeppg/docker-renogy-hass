@@ -11,7 +11,7 @@ services:
     devices:
       - '/dev/ttyUSB0:/dev/ttyUSB0'
     volumes:
-      - 'st:/app'
-      - '/mnt/data/supervisor/share/solarthing/config:/app/config:ro'
-volumes:
-  st:
+#      This is to work in HASSIO with the Portainer add in.
+#      Note you must manually copy the config file to this directory in HASSIO
+#      - '/mnt/data/supervisor/share/solarthing/config:/app/config:ro'
+       - './config:/app/config:ro'
